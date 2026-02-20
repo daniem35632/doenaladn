@@ -1,0 +1,274 @@
+<!-- index.html - STARTSEITE -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DÖNALADN - DÖNA mal #anders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links left">
+                <li><a href="index.html" class="active">Startseite</a></li>
+                <li><a href="uber-uns.html">Über uns</a></li>
+                <li><a href="standorte.html">Standorte</a></li>
+            </ul>
+            
+            <div class="logo">
+                <span class="logo-d">D</span>
+                <div class="logo-icon"></div>
+                <span class="logo-text">NALADN</span>
+            </div>
+            
+            <ul class="nav-links right">
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="active">Startseite</a>
+        <a href="uber-uns.html">Über uns</a>
+        <a href="standorte.html">Standorte</a>
+        <a href="faq.html">FAQs</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <!-- Hero Section -->
+        <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>DÖNA mal <span class="highlight">#anders</span></h1>
+            <p>weil alles andere zu einfach wäre</p>
+            <!-- BUTTON GEÄNDERT: Jetzt öffnet er das Modal -->
+            <button class="btn-primary" onclick="openSpeisekarte()">Speisekarte ansehen</button>
+        </div>
+    </section>
+
+    <!-- SPEISEKARTE MODAL - HIER WIRD DAS BILD ANGEZEIGT -->
+    <div id="speisekarteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeSpeisekarte()">&times;</span>
+            <h2>Unsere Speisekarte</h2>
+            <!-- ⭐ HIER KOMMT DEIN BILD REIN -->
+            <img src="images/speisekarte.jpg" alt="Speisekarte DÖNALADN" class="speisekarte-img">
+            <p class="modal-hinweis">Klicke außerhalb des Bildes oder auf das X zum Schließen</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Tradition Section -->
+    <section class="tradition">
+        <div class="container">
+            <div class="tradition-grid">
+                <div class="tradition-content">
+                    <h2>Traditionelle Rezepte, moderne Interpretation</h2>
+                    <p>Wir freuen uns darauf, dich bei uns begrüßen zu dürfen! Schau dir gerne unser Angebot an und besuche einen unserer zahlreichen Standorte, um deine Favoriten auszuwählen. Bei uns findest du eine vielfältige Auswahl an DÖNA-Spezialitäten.</p>
+                    <div class="btn-group">
+                        <a href="standorte.html" class="btn-secondary">Standorte</a>
+                        <a href="uber-uns.html" class="link-arrow">Mehr über uns <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="tradition-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Pommes Döner Teller</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">DÖNA <span class="highlight">#anders</span></h2>
+            <p class="section-subtitle">Wir laden dich herzlich ein, unsere köstlichen Gerichte zu probieren</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <h3>Hot Dog</h3>
+                    <p>Wahlweise mit Geflügel</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <h3>Döna Toast</h3>
+                    <p>Toasteffekt ist Garantiert</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <h3>Döna Dilla</h3>
+                    <p>Quesadilla aber anders</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder small">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <h3>Döna Börga</h3>
+                    <p>Super fluffig</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Burger Highlights -->
+    <section class="burger-highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlights-content">
+                    <h2>Unsere Burger-Highlights</h2>
+                    <p>Wir haben für jeden Geschmack den perfekten Burger im Angebot</p>
+                    
+                    <div class="highlight-items">
+                        <div class="highlight-item">
+                            <h3><span class="highlight">Smashed</span> Patty</h3>
+                            <p>Probier unseren leckeren Smashed Burger Patty! Knusprige Kruste, saftig und zart. Dein ultimativer Burger-Genuss!</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3><span class="highlight">Soßen</span> Paradies</h3>
+                            <p>Gönn deinem Burger das i-Tüpfelchen! Große Auswahl an leckeren Soßen für jeden Geschmack.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3><span class="highlight">Regionales</span> Fleisch</h3>
+                            <p>Genieße nachhaltigen Genuss mit regionalem Fleisch. Unterstütze die lokale Wirtschaft!</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3><span class="highlight">Frische</span> Zutaten</h3>
+                            <p>Frische Zutaten für unvergleichlichen Geschmack! Qualität und Frische in jedem Bissen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlights-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Burger mit Pommes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Features -->
+    <section class="about-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="features-content">
+                    <h2>Was macht uns aus?</h2>
+                    <p>Alle Fleischprodukte sind aus eigener und naturbelassener Produktion, die höchste Standards in Bezug auf Tierhaltung und Fütterung erfüllt.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h3>Exklusive Partnerschaften</h3>
+                                <p>Exklusive Partnerschaft mit der Feinkost-Fleischerei Bis & Millah, einer renommierten Handwerksmetzgerei, die für ihre erstklassige Qualität und traditionelle Herstellungsmethoden bekannt ist.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h3>Vegetarische Gerichte</h3>
+                                <p>Unsere Gerichte sind auch vegetarisch erhältlich, um eine breite Auswahl für alle Gäste zu gewährleisten und den Bedürfnissen von Vegetariern gerecht zu werden.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Döner & Restaurant Collage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo small">
+                        <span class="logo-d">D</span>
+                        <div class="logo-icon"></div>
+                        <span class="logo-text">NALADN</span>
+                    </div>
+                    <p>weil Dönerladen zu einfach wäre...</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Startseite</a>
+                    <a href="uber-uns.html">Über uns</a>
+                    <a href="standorte.html">Standorte</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-envelope"></i> info@doenaladn.de</p>
+                    <p><i class="fas fa-clock"></i> Mo-So: 11:30 - 22:00</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Weseler Str. 120, 45479 Mülheim an der Ruhr</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Folge uns</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 DÖNALADN. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <div class="status-button" id="statusBtn">
+            <i class="fas fa-clock"></i>
+            <span id="statusText">Lädt...</span>
+        </div>
+        
+        <a href="https://wa.me/4917671203245" class="whatsapp-button" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
